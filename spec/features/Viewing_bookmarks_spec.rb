@@ -1,5 +1,5 @@
-
-require 'pg'
+require 'bookmark'
+require 'spec_helper'
 
 feature 'Viewing bookmarks' do
 
