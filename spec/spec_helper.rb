@@ -3,17 +3,30 @@
 # The generated `.rspec` file contains `--require spec_helper` which will cause
 # this file to always be loaded, without a need to explicitly require it in any
 # files.
-#
 
-ENV['RACK_ENV'] = 'test'
 
-# Bring in the contents of the `app.rb` file
+
+
+require_relative 'setup_test_database'
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 # Require all the testing gems
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
+
+#
+ENV['ENVIRONMENT'] = 'test'
+ENV['RACK_ENV'] = 'test'
+
+RSpec.configure do |config|
+  config.before(:each) do
+    setup_test_database
+  end
+end
+
+
+# Bring in the contents of the `app.rb` file
 
 # Tell Capybara to talk to BookmarkManager
 Capybara.app = BookmarkManager
