@@ -51,6 +51,16 @@
         null,
         null,
         null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
         null,
         null
       ],
@@ -76,7 +86,24 @@
         null,
         null
       ],
-      "/Users/Nic/Desktop/Development/Bookmark-manager/spec/features/newbookmark_spec.rb": [
+      "/Users/Nic/Desktop/Development/Bookmark-manager/spec/features/delete_bookmark_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Nic/Desktop/Development/Bookmark-manager/spec/features/new_bookmark_spec.rb": [
         1,
         1,
         null,
@@ -90,6 +117,8 @@
         1,
         null,
         null,
+        null,
+        1,
         1,
         1,
         1,
@@ -102,6 +131,6 @@
         null
       ]
     },
-    "timestamp": 1538066765
+    "timestamp": 1538149900
   }
 }

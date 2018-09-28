@@ -1,8 +1,17 @@
+<%= flash[:notice] %> <br> <br>
 
+  <% @bookmarks.each do |bookmark| %>
+    <li id="bookmark-<%= bookmark.id %>">
+        <%= bookmark.title %> <br>
+        <%= bookmark.url %>
+      </a>
+      <form action="/bookmarks/<%= bookmark.id %>" method="post">
 
-<% @bookmarks.each do |bookmark| %>
-<%= bookmark.url %>
-<%= bookmark.title %>
-<% end %>
+        <input type="submit" value="delete" { center }/>
+      </form>
+    </li>
+  <% end %>
 
-<%= flash[:notice] %>
+  <form action="/bookmarks/new" method="get">
+    <input type="submit" value="Add new" />
+  </form>
