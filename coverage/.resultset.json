@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Nic/Desktop/Development/FakeTwitter/spec/cheet_spec.rb": [
+      "/Users/Nic/Desktop/Development/Chitter/spec/cheet_spec.rb": [
         1,
         null,
         1,
@@ -39,7 +39,7 @@
         null,
         null
       ],
-      "/Users/Nic/Desktop/Development/FakeTwitter/spec/features/Viewing_cheets_spec.rb": [
+      "/Users/Nic/Desktop/Development/Chitter/spec/features/Viewing_cheets_spec.rb": [
         1,
         1,
         null,
@@ -56,7 +56,7 @@
         null,
         null
       ],
-      "/Users/Nic/Desktop/Development/FakeTwitter/spec/features/new_cheet_spec.rb": [
+      "/Users/Nic/Desktop/Development/Chitter/spec/features/new_cheet_spec.rb": [
         1,
         1,
         null,
@@ -71,6 +71,6 @@
         null
       ]
     },
-    "timestamp": 1538344191
+    "timestamp": 1538344792
   }
 }
