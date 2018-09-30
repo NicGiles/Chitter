@@ -1,43 +1,30 @@
 require 'sinatra/base'
 require 'sinatra/flash'
-require './lib/bookmark'
+require './lib/cheet'
 require 'uri'
 
-class BookmarkManager < Sinatra::Base
+class Chitter < Sinatra::Base
 
   enable :sessions
   register Sinatra::Flash
 
   get '/' do
-  redirect'/bookmarks'
-
+    redirect'/chitter'
   end
 
-
-  get '/bookmarks' do
-    @bookmarks = Bookmark.all
-    erb :bookmarks
+  get '/chitter' do
+    @chitter = Cheet.all
+    erb :chitter
   end
 
-  get '/bookmarks/new' do
+  get '/chitter/new' do
     erb :new
   end
 
-
-  post '/bookmarks/new' do
-
-    flash[:notice] = "You must submit a valid url!." unless Bookmark.create(url: params['url'], title: params[:title])
-    redirect '/bookmarks'
-
+  post '/chitter/new' do
+    Cheet.create(cheet: params['cheet'])
+    redirect '/chitter'
   end
 
-
-    post '/bookmarks/:id' do
-    Bookmark.delete(id: params[:id])
-    redirect '/bookmarks'
-end
-
     run! if app_file == $0
-
-
 end
