@@ -1,9 +1,9 @@
+<% @chitter.each do |cheet| %>
+       <li id="cheet-<%= cheet.id %>">
+       "<%= cheet.cheet %>"
+       <%= cheet.time[0..8] %>
+     <% end %> <br><br>
 
-        <% @chitter.each do |cheet| %>
-        <li id="cheet-<%= cheet.id %>">
-        "<%= cheet.cheet %>"
-      <% end %> <br><br>
-
-  <form action="/chitter/new" method="get">
-    <input type="submit" value="New Cheet" />
-  </form>
+ <form action="/chitter/new" method="get">
+   <input type="submit" value="New Cheet" />
+ </form>

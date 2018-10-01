@@ -26,10 +26,12 @@ end
 describe '.create' do
   it 'creates a new cheet' do
       cheet = Cheet.create(cheet: "donald has such tiny hands")
+      Cheet.create(cheet: "sack Mourinho")
       cheet = Cheet.all.first
 
       expect(cheet).to be_a Cheet
       expect(cheet).to respond_to (:id)
+      expect(cheet).to respond_to (:time)
       expect(cheet.cheet).to eq 'donald has such tiny hands'
     end
   end

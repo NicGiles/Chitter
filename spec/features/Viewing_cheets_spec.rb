@@ -12,4 +12,5 @@ require 'spec_helper'
     expect(page).to have_content("brand new tweet")
     expect(page).to have_content("strong opinion about Russia")
   end
+
 end
