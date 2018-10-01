@@ -1,7 +1,7 @@
 <% @chitter.each do |cheet| %>
        <li id="cheet-<%= cheet.id %>">
        "<%= cheet.cheet %>"
-       <%= cheet.time[0..8] %>
+       Cheeted at <%= cheet.time[0..8] %>
      <% end %> <br><br>
 
  <form action="/chitter/new" method="get">

@@ -3,13 +3,14 @@ require 'sinatra/flash'
 require './lib/cheet'
 require 'uri'
 
+# Main app for pulling together chitter methods and classes
 class Chitter < Sinatra::Base
 
   enable :sessions
   register Sinatra::Flash
 
   get '/' do
-    redirect'/chitter'
+    redirect '/chitter'
   end
 
   get '/chitter' do
@@ -25,6 +26,5 @@ class Chitter < Sinatra::Base
     Cheet.create(cheet: params['cheet'])
     redirect '/chitter'
   end
-
-    run! if app_file == $0
+  run if app_file > $0
 end

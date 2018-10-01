@@ -3,18 +3,12 @@
     "coverage": {
       "/Users/Nic/Desktop/Development/Chitter/spec/cheet_spec.rb": [
         1,
-        null,
         1,
-        null,
         null,
         1,
         1,
         1,
-        null,
-        null,
         1,
-        1,
-        null,
         1,
         1,
         null,
@@ -22,8 +16,7 @@
         1,
         1,
         1,
-        null,
-        null,
+        1,
         null,
         null,
         null,
@@ -35,24 +28,6 @@
         null,
         1,
         1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/Nic/Desktop/Development/Chitter/spec/features/Viewing_cheets_spec.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
         1,
         1,
         null,
@@ -72,8 +47,22 @@
         1,
         null,
         null
+      ],
+      "/Users/Nic/Desktop/Development/Chitter/spec/features/viewing_cheets_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1538393923
+    "timestamp": 1538400798
   }
 }
